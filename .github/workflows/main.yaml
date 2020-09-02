@@ -17,17 +17,9 @@ jobs:
       with:
         namespace: rberrelleza
     
-    - name: Deploy App
-      uses: okteto/apply@master
-      with:
-        namespace: rberrelleza
-        manifest: k8s.yml
+    - name: Deploy Pipeline
+      uses: okteto/pipeline@927f0a492b3a284042e74fbdc6b139ae64ed11c6
     
-    - name: Push
-      uses: okteto/push@master
-      with:
-        namespace: rberrelleza
-     
     - name: Sleep for 30 seconds
       uses: jakejarvis/wait-action@v0.1.0
       with:
