@@ -18,7 +18,7 @@ jobs:
         namespace: rberrelleza
     
     - name: Deploy Pipeline
-      uses: okteto/pipeline@7a9cf2f33030cffb7cb97654d69ed773d953bbaf
+      uses: okteto/pipelines@7a9cf2f33030cffb7cb97654d69ed773d953bbaf
     
     - name: Sleep for 30 seconds
       uses: jakejarvis/wait-action@v0.1.0
