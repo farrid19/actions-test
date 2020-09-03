@@ -1,2 +1,3 @@
 deploy:
-  - okteto push
+  - okteto build okteto.dev/actions-test:pipeline
+  - kubectl apply -f k8s.yml
