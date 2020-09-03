@@ -18,7 +18,7 @@ jobs:
         namespace: rberrelleza
     
     - name: Deploy Pipeline
-      uses: okteto/pipelines@v0.1
+      uses: okteto/pipeline@master
       with:
         name: test-pipeline
     
@@ -32,3 +32,8 @@ jobs:
       with:
         url-to-hit: "https://hello-actions-rberrelleza.cloud.okteto.net"
         expected-statuses: "200"
+    
+    - name: Destroy Pipeline
+      uses: okteto/destroy-pipeline@master
+      with:
+        name: test-pipeline
