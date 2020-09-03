@@ -18,7 +18,7 @@ jobs:
         namespace: rberrelleza
     
     - name: Deploy Pipeline
-      uses: okteto/pipelines@373792eb8a81bea3b0b9e91315d4a516680eb905
+      uses: okteto/pipelines@v0.1
       with:
         name: test-pipeline
     
