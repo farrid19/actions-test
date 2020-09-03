@@ -13,7 +13,7 @@ spec:
         app: hello-actions
     spec:
       containers:
-      - image: okteto.dev/actions-test:pipeline
+      - image: ramiro/hello-actions:latest
         name: hello-actions
 
 ---
