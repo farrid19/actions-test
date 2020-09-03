@@ -20,7 +20,7 @@ jobs:
     - name: Deploy Pipeline
       uses: okteto/pipelines@373792eb8a81bea3b0b9e91315d4a516680eb905
       with:
-        name: pr-${{ github.event.number }}
+        name: test-pipeline
     
     - name: Sleep for 30 seconds
       uses: jakejarvis/wait-action@v0.1.0
