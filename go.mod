@@ -1,3 +1,3 @@
-module github.com/rberrelleza/actions-test
+module github.com/farrid19/actions-test
 
 go 1.13

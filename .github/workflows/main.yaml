@@ -15,18 +15,18 @@ jobs:
     - name: Activate Namespace
       uses: okteto/namespace@master
       with:
-        namespace: rberrelleza
+        namespace: farrid19
     
     - name: Deploy App
       uses: okteto/apply@master
       with:
-        namespace: rberrelleza
+        namespace: farrid19
         manifest: k8s.yml
     
     - name: Push
       uses: okteto/push@master
       with:
-        namespace: rberrelleza
+        namespace: farrid19
      
     - name: Sleep for 30 seconds
       uses: jakejarvis/wait-action@v0.1.0
@@ -36,5 +36,5 @@ jobs:
     - name: Verify
       uses: srt32/uptime@v0.2
       with:
-        url-to-hit: "https://hello-actions-rberrelleza.cloud.okteto.net"
+        url-to-hit: "https://hello-actions-farrid19.cloud.okteto.net"
         expected-statuses: "200"
